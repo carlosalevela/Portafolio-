@@ -20,7 +20,7 @@ const About = () => {
           <h3 className='text-xl font-bold text-white mb-2'>Me encuentras en</h3>
           <div className='flex'>
             {/* Logos de redes sociales */}
-            <a href='https://github.com/tucuenta' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/carlosalevela' target='_blank' rel='noopener noreferrer'>
               <img src={Git} alt='GitHub' className='w-8 h-8 mr-4' />
             </a>
             <a href='https://www.facebook.com/profile.php?id=100081108318320' target='_blank' rel='noopener noreferrer'>
