@@ -19,31 +19,31 @@ const Skills = () => {
         <div className='mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto'>
           <div className='flex flex-col items-center'>
             <img src={java} alt='JavaScript Logo' className='h-20 w-20 mb-2' />
-            <p className='text-sm text-black'>JavaScript</p>
+            <p className='text-sm text-white'>JavaScript</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={angu} alt='Angular Logo' className='h-20 w-20 mb-2' />
-            <p className='text-sm text-black'>Angular</p>
+            <p className='text-sm text-white'>Angular</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={django} alt='Django Logo' className='h-20 w-20 mb-2' />
-            <p className='text-sm text-black'>Django</p>
+            <p className='text-sm text-white'>Django</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={react} alt='React Logo' className='h-20 w-20 mb-2' />
-            <p className='text-sm text-black'>React</p>
+            <p className='text-sm text-white'>React</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={vercel} alt='Vercel Logo' className='h-20 w-20 mb-2' />
-            <p className='text-sm text-black'>Vercel</p>
+            <p className='text-sm text-white'>Vercel</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={vite} alt='Vite Logo' className='h-20 w-20 mb-2' />
-            <p className='text-sm text-black'>Vite</p>
+            <p className='text-sm text-white'>Vite</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={git} alt='Git Logo' className='h-20 w-20 mb-2' />
-            <p className='text-sm text-black'>GitHub</p>
+            <p className='text-sm text-white'>GitHub</p>
           </div>
         </div>
       </div>
