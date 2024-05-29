@@ -14,7 +14,7 @@ const NavbarMobile = () => {
       </button>
       <ul
         id='mobile-nav'
-        className={`gap-10 text-xl dark:bg-slate-800 bg-primary text-white flex-center flex-col fixed w-full overflow-hidden bottom-0 duration-200 rounded-t-3xl left-0 z-[998] ${isOpen ? 'h-auto' : 'h-0'}`}
+        className={`gap-4 text-lg dark:bg-slate-800 bg-primary text-white flex-center flex-col fixed w-full overflow-hidden bottom-0 duration-200 rounded-t-3xl left-0 z-[998] ${isOpen ? 'h-auto' : 'h-0'}`}
       >
         <li>
           <a href='#home'>Home</a>
@@ -26,14 +26,7 @@ const NavbarMobile = () => {
           <a href='#projects'>Projects</a>
         </li>
         <li>
-          <a href='#contact'>Contact Us</a>
-        </li>
-        <li>
-          <a href='#contact'>
-            <button className='btn btn-outline'>
-              <i className='fa-regular fa-paper-plane'></i> Lets Talk
-            </button>
-          </a>
+          <a href='#contact'>Skills</a>
         </li>
       </ul>
     </div>

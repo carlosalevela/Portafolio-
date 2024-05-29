@@ -1,77 +1,36 @@
-import Alegre from '../../assets/images/Alegre.png';
+import Alegre from './../../assets/images/Alegre.png';
+import Face from './../../assets/images/brand-facebook.png';
+import Inst from './../../assets/images/brand-instagram.png';
+import Git from './../../assets/images/brand-github.png';
 
 const About = () => {
   return (
-    <section id='about' className='container min-h-screen flex-center'>
-      <div className=''>
-        <div className='text-center text-balance'>
-          <h3>Un poco sobre mí</h3>
-          <p className='px-2 mt-3 text-gray-500'>
-            Un poco sobre mí y mis aficiones. Me encanta conocer nuevas cosas y lugares, siempre acompañado de mis seres queridos, amigos o familia. Otro gusto que tengo desde pequeño son los carros y motos, me gusta mucho verlos correr y sumergirme en los arreglos mecánicos y modificaciones que se pueden realizar.
+    <section id='about' className='container mx-auto min-h-screen flex flex-col items-center bg-purple-landing py-10'>
+      <div className='text-center text-white'>
+        <h3 className='text-3xl font-bold'>Un poco Sobre Mí</h3>
+      </div>
+      <div className='flex flex-col md:flex-row items-center justify-between w-full mt-10 px-6 max-w-6xl'>
+        <div className='text-center md:text-left text-white md:w-1/2'>
+          <p className='px-2 mt-3'>
+            Un poco sobre mí y mis aficiones. Me encanta conocer nuevas cosas, nuevos lugares, siempre acompañado de mis seres queridos, amigos o familia. Otro gusto que sigo desde pequeño son los carros y motos. Me gusta mucho verlos correr y además sumergirme un poco en lo que es los arreglos mecánicos y modificaciones que se pueden realizar.
           </p>
         </div>
-        <div className='max-w-2xl grid md:grid-cols-1 gap-6 px-2 sm:grid-cols-3 *:text-lg *:sm:max-w-full *:max-w-sm hover:*:brightness-90 *:mx-auto *:sm:text-left *:text-center *:hover:cursor-pointer *:shadow-sm mt-10 mx-auto *:rounded-xl *:bg-gray-100 *:dark:bg-slate-800 *:p-7 *:flex *:md:flex-row *:flex-col *:items-center *:gap-12'>
-          <div>
-            <div className='*:text-primary'>
-              <i className='fa-regular fa-object-ungroup'></i>
-              <h6 className='font-semibold whitespace-nowrap mt-3'>
-                Diseño de Sitios Web
-              </h6>
-            </div>
-            <div>
-              <p className='text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta corporis tempora possimus?
-              </p>
-            </div>
-            <i className='fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer'></i>
-          </div>
-          <div>
-            <div className='*:text-primary'>
-              <i className='fa-solid fa-pen-nib'></i>
-              <h6 className='font-semibold whitespace-nowrap mt-3'>
-                Diseño UI/UX
-              </h6>
-            </div>
-            <div>
-              <p className='text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta corporis tempora possimus?
-              </p>
-            </div>
-            <i className='fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer'></i>
-          </div>
-          <div>
-            <div className='*:text-primary'>
-              <i className='fa-solid fa-people-group'></i>
-              <h6 className='font-semibold whitespace-nowrap mt-3'>
-                Trabajo en Equipo
-              </h6>
-            </div>
-            <div>
-              <p className='text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta corporis tempora possimus?
-              </p>
-            </div>
-            <i className='fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer'></i>
+        <div className='flex flex-col items-center md:w-1/2 mt-6 md:mt-0'>
+          <img src={Alegre} alt='Perfil' className='w-32 h-32 rounded-full mb-4' /> {/* Foto de perfil */}
+          <h3 className='text-xl font-bold text-white mb-2'>Me encuentras en</h3>
+          <div className='flex'>
+            {/* Logos de redes sociales */}
+            <a href='https://github.com/carlosalevela' target='_blank' rel='noopener noreferrer'>
+              <img src={Git} alt='GitHub' className='w-8 h-8 mr-4' />
+            </a>
+            <a href='https://www.facebook.com/profile.php?id=100081108318320' target='_blank' rel='noopener noreferrer'>
+              <img src={Face} alt='Facebook' className='w-8 h-8 mr-4' />
+            </a>
+            <a href='https://www.instagram.com/carlos_velasco_19/' target='_blank' rel='noopener noreferrer'>
+              <img src={Inst} alt='Instagram' className='w-8 h-8' />
+            </a>
           </div>
         </div>
-      </div>
-      <div className='flex justify-center mt-6'>
-        <h3 className='text-xl font-bold'>Me encuentras en</h3> {/* Título */}
-      </div>
-      <div className='flex justify-center mt-2'>
-        {/* Logos de redes sociales */}
-        <a href='https://github.com/tucuenta' target='_blank' rel='noopener noreferrer'>
-          <img src='/path/to/github-logo.png' alt='GitHub' className='w-8 h-8 mr-4' />
-        </a>
-        <a href='https://facebook.com/tucuenta' target='_blank' rel='noopener noreferrer'>
-          <img src='/path/to/facebook-logo.png' alt='Facebook' className='w-8 h-8 mr-4' />
-        </a>
-        <a href='https://instagram.com/tucuenta' target='_blank' rel='noopener noreferrer'>
-          <img src='/path/to/instagram-logo.png' alt='Instagram' className='w-8 h-8 mr-4' />
-        </a>
-      </div>
-      <div className='flex justify-center mt-6'>
-        <img src={Alegre} alt='Perfil' className='w-32 h-32 rounded-full' /> {/* Foto de perfil */}
       </div>
     </section>
   );
