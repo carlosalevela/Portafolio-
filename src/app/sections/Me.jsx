@@ -10,11 +10,11 @@ const Me = () => {
         <div className='lg:col-span-2 sm:pl-2 md:w-1/2 text-center md:text-left'>
           <div>
             <h5 className='font-medium text-gray-600 dark:text-gray-200'>
-              ¡Hola, bienvenido!
+              ¡Hola, Bienvenido!
             </h5>
             <h1 className='sm:text-5xl text-4xl dark:text-white font-medium leading-normal'>
               Soy <span className='text-primary'>Carlos Velasco</span> <br />
-              Ingeniero de Software
+              Estudiante De Ingenieria De Software
             </h1>
             <button className='font-semibold dark:text-gray-200 border-b-2 border-gray-700 mt-4'>
               <i className='fa-solid fa-up-right-from-square'></i> Ver Portafolio
